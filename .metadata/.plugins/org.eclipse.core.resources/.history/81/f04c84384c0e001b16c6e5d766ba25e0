@@ -1,0 +1,22 @@
+package br.com.isidrocorp.projetoferiado.controller;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestBody;
+import org.springframework.web.bind.annotation.RestController;
+
+import br.com.isidrocorp.projetoferiado.dao.UsuarioDAO;
+import br.com.isidrocorp.projetoferiado.model.Usuario;
+
+@RestController
+public class UsuarioController {
+
+	@Autowired
+	private UsuarioDAO dao;
+	
+	@PostMapping("/login")
+	public Usuario login(@RequestBody Usuario dadosUserLogin) {
+		Usuario resultado = dao.findbyRacfAndSenha(dadosUserLogin.getRacf(), dadosUserLogin.getSenha());
+		return resultado;
+	}
+}

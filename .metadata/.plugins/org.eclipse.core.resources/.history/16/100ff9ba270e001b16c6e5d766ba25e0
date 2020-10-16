@@ -1,0 +1,10 @@
+package br.com.isidrocorp.hello.controller;
+
+@RetController
+public class HelloController {
+	
+	public String sayHello() {
+		return "Oi!!! Ufa... Agora vai!";
+	}
+
+}

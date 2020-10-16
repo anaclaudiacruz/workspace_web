@@ -1,0 +1,29 @@
+package br.com.isidrocorp.projetoferiado.controller;
+
+import java.util.ArrayList;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.GetMapping;
+import br.com.isidrocorp.projetoferiado.dao.AgenciaDAO;
+import br.com.isidrocorp.projetoferiado.model.Agencia;
+
+public class AgenciaController {
+	/* O que faz o Autowired? Tecnicamente ele faz uma Injeção de dependências
+	 * A injeção de dependência é basicamente ....
+	 * 
+	 */
+	@Autowired
+	private AgenciaDAO dao; // esse cara que vai fazer o acesso ao BD
+	
+	
+	// aqui precisamos criar um método que retorne todas as agências
+	// ele precisa recuperar tudo do banco de dados
+	
+	@GetMapping("/agencias")
+	public ArrayList<Agencia> recuperarTodas(){
+		ArrayList<Agencia> lista;
+		lista = (ArrayList<Agencia>)dao.findAll();
+		return lista;
+	}
+	
+}

@@ -1,0 +1,19 @@
+#opcoes{
+    margin-left: 10%;
+    margin-right: 10%;
+    border: 1px solid black;
+    border-radius: 5px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+#lblEscolha{
+    margin-left: 15%;
+    margin-top: 50px;
+    margin-bottom: -10px;
+    background-color: #0369D9;
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    
+}

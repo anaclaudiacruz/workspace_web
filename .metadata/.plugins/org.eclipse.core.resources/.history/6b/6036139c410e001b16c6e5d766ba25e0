@@ -1,0 +1,15 @@
+package br.com.isidrocorp.projetoferiado.controller;
+
+import java.util.ArrayList;
+import br.com.isidrocorp.projetoferiado.model.Agencia;
+
+public class AgenciaController {
+
+	// aqui precisamos criar um método que retorne todas as agências
+	// ele precisa recuperar tudo do banco de dados
+	
+	public ArrayList<Agencia> recuperarTodas(){
+		return null;
+	}
+	
+}

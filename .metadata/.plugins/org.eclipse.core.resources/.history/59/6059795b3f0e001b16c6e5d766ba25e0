@@ -1,0 +1,33 @@
+package br.com.isidrocorp.projetoferiado.model;
+
+import javax.persistence.Entity;
+import javax.persistence.Table;
+
+@Entity // aqui eu defino que a Agecincia será uma entidade armazenavel
+@Table(name="itmn330_agencia") // aqui eu especifico o nome da tabela persistente
+
+public class Agencia {
+	private int id;
+	private int numero;
+	private String nome;
+	public int getId() {
+		return id;
+	}
+	public void setId(int id) {
+		this.id = id;
+	}
+	public int getNumero() {
+		return numero;
+	}
+	public void setNumero(int numero) {
+		this.numero = numero;
+	}
+	public String getNome() {
+		return nome;
+	}
+	public void setNome(String nome) {
+		this.nome = nome;
+	}
+	
+	
+}

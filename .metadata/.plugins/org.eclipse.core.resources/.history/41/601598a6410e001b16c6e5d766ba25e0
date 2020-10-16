@@ -1,0 +1,26 @@
+package br.com.isidrocorp.projetoferiado.controller;
+
+import java.util.ArrayList;
+
+import org.springframework.beans.factory.annotation.Autowired;
+
+import br.com.isidrocorp.projetoferiado.dao.AgenciaDAO;
+import br.com.isidrocorp.projetoferiado.model.Agencia;
+
+public class AgenciaController {
+	/* O que faz o Autowired
+	 * 
+	 * 
+	 */
+	@Autowired
+	private AgenciaDAO dao; // esse cara que vai fazer o acesso ao BD
+	
+	
+	// aqui precisamos criar um método que retorne todas as agências
+	// ele precisa recuperar tudo do banco de dados
+	
+	public ArrayList<Agencia> recuperarTodas(){
+		return null;
+	}
+	
+}

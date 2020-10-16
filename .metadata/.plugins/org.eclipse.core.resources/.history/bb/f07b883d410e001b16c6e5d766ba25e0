@@ -1,0 +1,5 @@
+package br.com.isidrocorp.projetoferiado.dao;
+
+public interface AgenciaDAO extends CrudRepository <Agencia,Integer>{
+
+}
